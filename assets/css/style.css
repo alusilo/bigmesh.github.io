@@ -16,10 +16,14 @@
 }
 
 .carousel-inner {
-	padding: 0 10% 0 10%;
+	/*padding: 0 10% 0 10%;*/
 	background: linear-gradient(-45deg, #6666ff, #000000, #23a6d5, #aabbff);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+	margin: 0 auto;
+}
+
+.carousel-inner .carousel-item {
 }
 
 @keyframes gradient {
@@ -34,16 +38,13 @@
 	}
 }
 
-.carousel-item img {
-	float: right;
-}
-
 .carousel-caption {
-   position: absolute;
-   top: 35%;
-   left: 0;
-   text-align: left;
-   width: 50%;
+   	left: 50%;
+   	top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    padding: 0 5%;
 }
 
 .carousel-caption h1 {
@@ -54,4 +55,85 @@
 
 .carousel-caption p {
 	color: #fff;
+}
+
+.carousel-indicators button {
+	background-color: #fff!important;
+	height: 10px!important;
+	width: 10px!important;
+	border-radius: 100%;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://creativecommons.org/ns%23' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' id='svg8' version='1.1' viewBox='0 0 32 32' height='32mm' width='32mm'%3E%3Cdefs id='defs2' /%3E%3Cmetadata id='metadata5'%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3E%3Cdc:title%3E%3C/dc:title%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cg transform='translate(0,-265)' id='layer1'%3E%3Cpath id='path815' d='M 23.733904,293.85119 8.236878,281 23.733904,268.14882' style='fill:none;stroke:%23ffffff;stroke-width:5.29166651;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3C/g%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://creativecommons.org/ns%23' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' id='svg8' version='1.1' viewBox='0 0 32 32' height='32mm' width='32mm'%3E%3Cdefs id='defs2' /%3E%3Cmetadata id='metadata5'%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3E%3Cdc:title%3E%3C/dc:title%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cg transform='translate(0,-265)' id='layer1'%3E%3Cpath id='path815' d='M 8.2660958,293.85119 23.763122,281 8.2660958,268.14882' style='fill:none;stroke:%23ffffff;stroke-width:5.29166651;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3C/g%3E%3C/svg%3E");
+}
+
+#services {
+	padding: 8% 0;
+}
+
+.section-title .title {
+	font-size: 50px;
+	font-weight: bold;
+	color: #000;
+}
+
+.section-title .text {
+	color: #777;
+}
+
+.card {
+	border: none;
+}
+
+.card .card-body .card-title {
+	font-size: 40px;
+	font-weight: 300;
+}
+
+.footer {
+	background-color: #222222;
+	text-align: center;
+	padding: 2% 0;
+	color: #fff;
+}
+
+.footer .social {
+	display: inline;
+	padding: 0;
+    margin: 0;
+}
+
+.footer .social li {
+	display: inline;
+	list-style-type: none;
+	padding: 0 5px;
+}
+
+.footer .social li a {
+	color: #fff;
+	font-size: 28px;
+}
+
+.footer .social li a:hover {
+	color: #6677ff;
+}
+
+.footer .footer-support {
+	padding: 20px 0;
+}
+
+.footer .footer-support span {
+	display: block;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.footer .copyright {
+	padding: 20px 0;
+	font-weight: bold;
 }
